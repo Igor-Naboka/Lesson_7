@@ -1,0 +1,161 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+
+/* Universal attributes */
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #424551;
+  line-height: 1.6;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 0 15px;
+}
+
+/* other attributes */
+
+/* header attributes */
+
+.header {
+  min-height: 170px;
+  margin-bottom: 20px;
+}
+
+/* main attributes */
+
+.main-title {
+  margin-bottom: 26px;
+}
+.title-text {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+}
+
+.time-info {
+  margin-bottom: 40px;
+}
+.time-info-block {
+  display: inline-block;
+  margin-right: 24px;
+}
+.time-info-text {
+  padding-left: 24px;
+  color: #787a80;
+}
+
+.info-text-calendar {
+  background: url("../img/index/calendar-icon.png") 0 5px / auto no-repeat;
+}
+
+.info-text-clock {
+  background: url("../img/index/clock-icon.png") 0 5px / auto no-repeat;
+}
+
+.img-block {
+  margin-bottom: 60px;
+}
+
+.text-block {
+  margin-bottom: 80px;
+}
+.text-block-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+
+  margin-bottom: 24px;
+}
+.regular-text {
+  margin-bottom: 20px;
+}
+.quote {
+  margin-bottom: 48px;
+  padding-top: 25px;
+}
+.quote-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+
+  padding-left: 58px;
+  background: url("../img/index/braces.png") 0 0 / auto no-repeat;
+}
+.unordered-list {
+  margin-bottom: 20px;
+}
+.ul-list {
+  padding-left: 32px;
+  background: url("../img/index/check-mack.png") 0 5px / auto no-repeat;
+  margin-bottom: 5px;
+}
+
+.why-createx-block {
+  margin-bottom: 80px;
+}
+.why-title {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+
+  margin-bottom: 8px;
+}
+.why-question {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+
+  margin-bottom: 40px;
+}
+
+.why-ul {
+  margin-bottom: 48px;
+}
+
+.why-item {
+  padding-left: 32px;
+  margin-bottom: 12px;
+
+  background: url("../img/index/check-mack.png") 0 5.5px / auto no-repeat;
+}
+
+.btn-block {
+}
+
+.btn {
+  display: inline-block;
+  min-height: 44px;
+  max-width: 160px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 3.14;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  padding: 0px 35px;
+}
+
+/* footer attributes */
+
+.footer {
+  min-height: 80px;
+}
