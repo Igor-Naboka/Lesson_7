@@ -1,194 +1,69 @@
 @import "null.css";
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&dispaly=swap");
 
 /* universal attributes */
 
-body {
-  font-family: Bitter, sans-serif;
-  font-size: 20px;
-  line-height: 1.25;
-  font-style: normal;
-  color: #000000;
-  background: rgb(80, 173, 216);
-}
-
 .wrapper {
-  overflow: hidden;
   min-height: 100%;
+  overflow: hidden;
+  background: url("../img/training_l7/moon.png") 20px 30px / 300px auto no-repeat fixed,
+    url("../img/training_l7/mouse.png") right bottom / 300px auto no-repeat fixed,
+    url("../img/training_l7/bg-for-wrapper.jpg") 0 0 / auto auto repeat;
 }
 
 [class*="__container"] {
+  max-width: 830px;
+  padding: 0 15px;
   margin: 0 auto;
-  max-width: 1024px;
 }
 
 /* other attributes */
 
 /* header attributes */
 
-.header {
-  text-align: center;
-  margin: 80px auto;
+.header-clouds {
+  overflow-y: scroll;
+  max-height: 400px;
+  background: url("../img/training_l7/stars.jpg") 0 0 / auto auto repeat local;
 }
 
-.header-wrapper {
-  border-radius: 16% 84% 14% 86% / 71% 34% 66% 29%;
-  border: 2px solid blueviolet;
-  background: rgb(224, 250, 153);
-  min-height: 100px;
-  padding: 25px;
-}
-
-.header-btn1,
-.header-btn2,
-.header-btn3 {
-  display: inline-block;
-  margin-right: 25px;
-}
-
-.header-btn1 {
-  box-shadow: 0 0 50px 3px #ec1c8e;
-  border: 3px dotted #fff;
-  border-radius: 55% 45% 50% 50% / 46% 52% 48% 54%;
-}
-
-.header-link1 {
-  display: inline-block;
-  padding: 10px 15px;
-  background: rgb(250, 176, 153);
-  border-radius: 55% 45% 50% 50% / 46% 52% 48% 54%;
-
-  box-shadow: inset 0 0 15px 3px rgba(216, 9, 199, 0.603);
-}
-
-.header-link2 {
-  display: inline-block;
-  padding: 10px;
-  outline: 3px solid #ec1c8e;
-  border-radius: 50%;
-  background: rgba(90, 59, 226, 0.651);
-}
-
-.header-link3 {
-  display: inline-block;
-  padding: 40px;
-  border: 5px dashed #037913cb;
-  border-radius: 55% 45% 87% 13% / 46% 4% 96% 54%;
-  outline: 7px double #000000;
-  background-color: rgb(209, 45, 45);
+.header-text {
+  opacity: 0;
 }
 
 /* main attributes */
 
-.main-text1 {
-  font-family: Nunito, sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #7fffd4;
-  text-decoration: line-through;
-
-  border: 3px dotted #000;
-  margin-bottom: 50px;
-}
-.main-text2 {
-  font-weight: 700;
-  font-style: italic;
-  display: inline;
-  border: 3px dotted #ec1c8e;
-  color: #037913cb;
-  line-height: 1.7;
-  text-decoration: underline;
-  border-radius: 50%;
-}
-.main-text3 {
-  text-transform: uppercase;
-  text-decoration: overline;
-
-  margin: 20px 0;
-  color: rgba(90, 59, 226, 0.651);
-  border: 3px solid #037913cb;
-  border-radius: 55% 45% 47% 53% / 8% 4% 96% 92%;
-  padding-bottom: 30px;
-  background-color: rgba(99, 241, 56, 0.466);
-  box-shadow: inset 0 0 50px 5px #000000;
+.main {
+  margin-bottom: 30px;
 }
 
-.main-text4 {
-  font-family: Nunito, sans-serif;
-  font-weight: 900;
-  font-size: 35px;
-  font-style: normal;
-  text-transform: capitalize;
-  outline: 5px double #ec1c8e;
-  border-radius: 10px;
-  margin-bottom: 50px;
-  padding: 10px 15px 20px 25px;
+.main-block {
+  min-height: 400px;
+  background: url("../img/training_l7/rocket.jfif") 220px -29px / 1200px auto no-repeat fixed;
 }
 
-.main-text5 {
-  max-width: 300px;
-  margin: 0 0 0 auto;
-  font-family: Nunito, sans-serif;
-  font-weight: 200;
-  font-style: italic;
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: #8f8d2a60;
-  box-shadow: 2px 2px 40px 10px #7fffd4;
-}
-
-.btn1 {
-  display: inline-block;
-  font-weight: 800;
-  color: #7fffd4;
-
-  padding: 20px 10px;
-  border-top: 5px dotted #ec1c8e;
-  border-right: 2px solid #000000;
-  border-bottom: 2px dashed #1fd64dd7;
-  border-left: 7px solid #ec1c8e;
-  border-radius: 15px 50px 15px 50px;
-  box-shadow: 0 20px 0 10px #1fd64dd7;
-
-  margin-bottom: 50px;
-}
-
-.btn2 {
-  display: block;
-  max-width: 420px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 40px;
-  padding: 10px 0 10px 0;
-  border-radius: 50px 15px 50px 15px;
-  border: 5px solid #000000;
-}
-
-.btn3 {
-  display: block;
-  max-width: 250px;
-  margin: 0 0 50px auto;
-  outline: 15px dotted #7fffd4;
-  text-align: center;
+.main-block-2 {
+  min-height: 1000px;
+  background: url("../img/training_l7/the-end.jfif") 610px 770px / 150px auto no-repeat,
+    url("../img/training_l7/stars.png") -39px -136px / 888px auto no-repeat,
+    url("../img/training_l7/an-array-of.png") right bottom / 250px auto no-repeat,
+    linear-gradient(180deg, #995fbb, #226f91, #731780);
 }
 
 /* footer attributes */
 
-.footer {
+.footer__container {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .footer-btn {
   display: inline-block;
-  padding: 30px 5px;
-
+  padding: 15px 25px;
+  border-radius: 45px 15px 45px 15px;
+  font-size: 35px;
   font-weight: 900;
-  text-decoration: line-through;
-  text-transform: capitalize;
-  border-radius: 50%;
-  background: rgb(61, 233, 132);
-  outline: 15px dashed #000000;
+  text-transform: uppercase;
+
+  color: #995fbb;
+  background: linear-gradient(92deg, #3667aa, #23af8c, #731780, #4c1ebc, #b1b9f6);
 }
